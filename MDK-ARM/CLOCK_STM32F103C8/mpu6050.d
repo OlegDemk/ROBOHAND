@@ -32,3 +32,4 @@ clock_stm32f103c8\mpu6050.o: ../Inc/stm32f1xx_it.h
 clock_stm32f103c8\mpu6050.o: ../Inc/main.h
 clock_stm32f103c8\mpu6050.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 clock_stm32f103c8\mpu6050.o: ../Inc/I2C_SCANER.h
+clock_stm32f103c8\mpu6050.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

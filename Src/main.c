@@ -100,7 +100,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-
+	init_MPU6050();	
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -108,9 +108,9 @@ int main(void)
   while (1)
   {
 		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
-		HAL_Delay(500);
-		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
 		HAL_Delay(50);
+		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+		HAL_Delay(5);
 		
 		// TEST USART
 		
@@ -121,7 +121,7 @@ int main(void)
 
 
     //I2C_scaner();
-    init_MPU6050();	
+    
 		read_acc_MPU6050();
     /* USER CODE END WHILE */
 
