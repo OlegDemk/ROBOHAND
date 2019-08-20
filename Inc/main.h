@@ -39,6 +39,8 @@ extern "C" {
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
 void I2C_scaner(void);
+void init_MPU6050(void);
+void read_acc_MPU6050(void);
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/

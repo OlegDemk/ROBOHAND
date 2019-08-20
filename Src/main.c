@@ -114,14 +114,15 @@ int main(void)
 		
 		// TEST USART
 		
-		memset(str, 0, sizeof(str));
-		sprintf(str,"TEST\r\n");      // convert   in  str 
-		size=sizeof(str);
-		HAL_UART_Transmit(&huart1 , (uint8_t *)str, size, 0xFFF); 	
+//		memset(str, 0, sizeof(str));
+//		sprintf(str,"TEST\r\n");      // convert   in  str 
+//		size=sizeof(str);
+//		HAL_UART_Transmit(&huart1 , (uint8_t *)str, size, 0xFFF); 	
 
 
-    I2C_scaner();
-    		
+    //I2C_scaner();
+    init_MPU6050();	
+		read_acc_MPU6050();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
