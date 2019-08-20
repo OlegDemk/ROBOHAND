@@ -32,12 +32,13 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "stdio.h"
+#include "I2C_SCANER.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-
+void I2C_scaner(void);
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
